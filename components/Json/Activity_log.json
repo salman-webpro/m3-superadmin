@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "restaurant_name": "Grab e cuppa",
+    "user_activity": "Login",
+    "admin_name": "Kaylin Mbappe",
+    "user_name": "Dionne Owens",
+    "date": "2022-08-21",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 2,
+    "restaurant_name": "Sulter dine",
+    "user_activity": "Visited",
+    "admin_name": "Kaylin Mbappe",
+    "user_name": "Rojas Luna",
+    "date": "2023-08-04",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 3,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Print",
+    "user_name": "Sarah Craig",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2019-09-23",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 4,
+    "restaurant_name": "Sulter dine",
+    "user_activity": "Download",
+    "user_name": "Byers Mccoy",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2014-02-21",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 5,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Approved",
+    "user_name": "Reed Hurst",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2014-07-20",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 6,
+    "restaurant_name": "Chillox",
+    "user_activity": "Rejected",
+    "user_name": "Moody Stanton",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2019-03-26",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 7,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Rejected",
+    "user_name": "Gould Freeman",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2016-09-23",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 8,
+    "restaurant_name": "Grab e cuppa",
+    "user_activity": "Approved",
+    "user_name": "Jolene Dudley",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2022-09-26",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 9,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Login",
+    "user_name": "Bolton Pope",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2015-01-02",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 10,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Login",
+    "admin_name": "Kaylin Mbappe",
+    "user_name": "Leslie Roberts",
+    "date": "2023-06-02",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 11,
+    "restaurant_name": "Sulter dine",
+    "user_activity": "Login",
+    "user_name": "Coleman Cooke",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2022-04-14",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 12,
+    "restaurant_name": "Grab e cuppa",
+    "user_activity": "Visited",
+    "user_name": "Sasha Stout",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2017-10-14",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 13,
+    "restaurant_name": "Sulter dine",
+    "user_activity": "Download",
+    "user_name": "Beulah Cole",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2024-04-24",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 14,
+    "restaurant_name": "Chillox",
+    "user_activity": "Print",
+    "user_name": "Dana Maxwell",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2016-06-18",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 15,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Download",
+    "user_name": "Guthrie Davenport",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2014-10-04",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  },
+  {
+    "id": 16,
+    "restaurant_name": "Kacchi Bhai",
+    "user_activity": "Download",
+    "user_name": "Guthrie Davenport",
+    "admin_name": "Kaylin Mbappe",
+    "date": "2014-10-04",
+    "time": "10:00 AM",
+    "email": "Asd@gmail.com"
+  }
+]

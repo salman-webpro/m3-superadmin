@@ -1,0 +1,106 @@
+"use client";
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import {FaCheckCircle} from "react-icons/fa";
+import {FaRegTimesCircle} from "react-icons/fa";
+import {CiCircleCheck} from "react-icons/ci";
+import {Label} from "@/components/ui/label";
+import {Input} from "@/components/ui/input";
+import {PatchPending} from "@/utils/patchData";
+import {useEffect, useState} from "react";
+import {getPendingResturant} from "@/utils/getData";
+
+function AcceptDialogBox({user_id, reFetch, setReFetch}) {
+    let [email, setEmail] = useState();
+
+    const payload = {
+        "email": email,
+        "is_verified": true
+    }
+    const handlePatch = async () => {
+        await PatchPending(payload, user_id);
+        setReFetch(!reFetch);
+    }
+    return (
+        <AlertDialog className={"bg-primary-50"}>
+            <AlertDialogTrigger asChild>
+                <FaCheckCircle className={"text-24 text-primary-900 cursor-pointer"}/>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+                <AlertDialogHeader>
+                    <div className="grid grid-cols-10 gap-2 items-start">
+                        <div className="col-span-1 mt-1.5">
+                            <CiCircleCheck
+                                className={
+                                    "h-[48px] w-[48px] p-1 text-[48px] rounded-[28px] bg-primary-300 border-[8px] border-primary-500 text-primary-900"
+                                }
+                            />
+                        </div>
+                        <div className="col-span-9 ml-3">
+                            <div className={"flex justify-between items-center"}>
+                                <h2
+                                    className={
+                                        "text-24 text-secondary-900 font-lightBold pt-0 mt-0"
+                                    }
+                                >
+                                    Confirm approval
+                                </h2>
+                                <AlertDialogCancel
+                                    className={
+                                        "bg-transparent text-24 border-0 hover:bg-transparent p-0 m-0"
+                                    }
+                                >
+                                    <FaRegTimesCircle className={"text-secondary-400 mt-[-40px] mr-[-10px]"}/>
+                                </AlertDialogCancel>
+                            </div>
+
+                            <p
+                                className={
+                                    "text-secondary-400 text-14 font-normal leading-20 tracking-normal py-2"
+                                }
+                            >
+                                Are you sure you want to approve? This action cannot be undone.
+                                To confirm approval you have to enter your valid email.
+                            </p>
+                            <form action="">
+                                <div className="">
+                                    <Label htmlFor="email"
+                                           className={'text-secondary-800 text-[12px] font-medium leading-16 tracking-wider'}>Email</Label>
+                                    <Input id="email" type="email" placeholder="dolores.chambers@example.com"
+                                           className={'border-0 border-b px-0 rounded-none focus-visible:ring-0 placeholder:text-secondary-500 text-16 py-0'}
+                                           required onChange={(e) => setEmail(e.target.value)}
+                                           onBlur={(e) => setEmail(e.target.value)}/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                    <AlertDialogCancel
+                        className={
+                            "bg-primary-100 text-secondary-600 text-[12px] font-medium leading-16 hover:bg-primary-100"
+                        }
+                    >
+                        Cancel
+                    </AlertDialogCancel>
+                    <AlertDialogAction onClick={handlePatch}
+                                       className={
+                                           "bg-primary-500 text-secondary-900 text-[12px] font-medium leading-16"
+                                       }
+                    >
+                        Approve
+                    </AlertDialogAction>
+                </AlertDialogFooter>
+            </AlertDialogContent>
+        </AlertDialog>
+    );
+}
+
+export default AcceptDialogBox;

@@ -1,0 +1,71 @@
+export default [
+  {
+    restaurant_info: {
+      id: 1,
+      restaurant_name: "Chillox",
+      image:
+        "https://marketplace.canva.com/EAFzZd9frfk/1/0/1600w/canva-colorful-illustrative-restaurant-master-chef-logo-4rQv_oY-CF8.jpg",
+      email: "ingrammcguire@zytrax.com",
+      phone: "(926) 521-3306",
+      pay_type: "Pay first",
+      discount: 70,
+      service_charge: 62,
+      bin_no: 1931984,
+      validity: 15,
+      slug: "chillox",
+      package_name: "Restaurant Automation",
+    },
+    owner_info: {
+      id: 1,
+      owner_name: "Sabbir Nayeem Shanto",
+      image:
+        "https://marketplace.canva.com/EAFzZd9frfk/1/0/1600w/canva-colorful-illustrative-restaurant-master-chef-logo-4rQv_oY-CF8.jpg",
+      email: "katherinemcmillan@sultrax.com",
+      phone: "(945) 561-2351",
+      nid: 2638378,
+      birth_date: "2021-10-08",
+    },
+    restaurant_quickData: {
+      total_branches: 48,
+      total_activeMenu: 6,
+      total_orders: 7921,
+      total_scans: 6319,
+    },
+    branches: [
+      {
+        branch_name: "Savar",
+        main_branch: true,
+        qr_image: "https://cdn.ttgtmedia.com/rms/misc/qr_code_barcode.jpg",
+        email: "jensenalvarez@futurize.com",
+        phone: "(984) 475-3755",
+        Location: "Uttara , dhaka",
+        branch_orders: 5949,
+        branch_scans: 5257,
+        opening_time: "8:00 Am",
+        closing_time: "12:00 PM",
+        manager_image:
+          "https://marketplace.canva.com/EAFzZd9frfk/1/0/1600w/canva-colorful-illustrative-restaurant-master-chef-logo-4rQv_oY-CF8.jpg",
+        Manager_name: "Betty Brennan",
+        manager_email: "peggyjohnston@frosnex.com",
+        manager_phone: "(870) 600-3223",
+      },
+      {
+        branch_name: "Uttara",
+        main_branch: false,
+        qr_image: "https://cdn.ttgtmedia.com/rms/misc/qr_code_barcode.jpg",
+        email: "reedtownsend@solaren.com",
+        phone: "(984) 568-3402",
+        Location: "Uttara , dhaka",
+        branch_orders: 7938,
+        branch_scans: 6239,
+        opening_time: "9:00 Am",
+        closing_time: "10:00 PM",
+        manager_image:
+          "https://marketplace.canva.com/EAFzZd9frfk/1/0/1600w/canva-colorful-illustrative-restaurant-master-chef-logo-4rQv_oY-CF8.jpg",
+        Manager_name: "Luann Riddle",
+        manager_email: "lottieyates@enormo.com",
+        manager_phone: "(973) 441-2653",
+      },
+    ],
+  },
+];

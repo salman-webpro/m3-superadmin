@@ -3,7 +3,11 @@ import { getChartData } from "@/utils/getData";
 
 export default async function GrowthRateChart() {
   const chartData = await getChartData();
-  const quickData = chartData?.data?.insights;
+  const quickData = {
+    total_restaurants: 100,
+    total_visitors: 5000,
+    recent_visitors: 1500,
+  };
   return (
     <div className="grid md:grid-cols-10 sm:grid-cols-2 gap-8">
       <div className="col-span-2 flex flex-col justify-between">

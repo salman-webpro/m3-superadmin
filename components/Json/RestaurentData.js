@@ -1,0 +1,135 @@
+export default [
+  {
+    id: 1,
+    name: "Ketchup",
+    active_Package: "Order Management",
+    total_branches: 50,
+    menu_scanned: 2500,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2016-09-16",
+    active: true,
+    slug: "chillox",
+  },
+  {
+    id: 2,
+    name: "French fries 200g",
+    active_Package: "Free for All",
+    total_branches: 51,
+    menu_scanned: 2501,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2015-10-20",
+    active: false,
+  },
+  {
+    id: 3,
+    name: "French fries 200g",
+    active_Package: "Restaurant Automation",
+    total_branches: 52,
+    menu_scanned: 2502,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2015-02-04",
+    active: true,
+  },
+  {
+    id: 4,
+    name: "Tomato sauce",
+    active_Package: "Order Management",
+    total_branches: 53,
+    menu_scanned: 2503,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2017-05-04",
+    active: false,
+  },
+  {
+    id: 5,
+    name: "French fries 100g",
+    active_Package: "Order Management",
+    total_branches: 54,
+    menu_scanned: 2504,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2024-04-29",
+    active: true,
+  },
+  {
+    id: 6,
+    name: "Spice",
+    active_Package: "Order Management",
+    total_branches: 55,
+    menu_scanned: 2505,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2017-05-28",
+    active: false,
+  },
+  {
+    id: 7,
+    name: "Tomato sauce",
+    active_Package: "Restaurant Automation",
+    total_branches: 56,
+    menu_scanned: 2506,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2024-02-10",
+    active: true,
+  },
+  {
+    id: 8,
+    name: "French fries 200g",
+    active_Package: "Order Management",
+    total_branches: 57,
+    menu_scanned: 2507,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2020-10-07",
+    active: false,
+  },
+  {
+    id: 9,
+    name: "Spice",
+    active_Package: "Order Management",
+    total_branches: 58,
+    menu_scanned: 2508,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2021-11-09",
+    active: true,
+  },
+  {
+    id: 10,
+    name: "French fries 100g",
+    active_Package: "Free for All",
+    total_branches: 59,
+    menu_scanned: 2509,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2024-04-11",
+    active: false,
+  },
+  {
+    id: 11,
+    name: "French fries 100g",
+    active_Package: "Order Management",
+    total_branches: 60,
+    menu_scanned: 2510,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2016-04-24",
+    active: true,
+  },
+  {
+    id: 12,
+    name: "French fries 200g",
+    active_Package: "Order Management",
+    total_branches: 61,
+    menu_scanned: 2511,
+    image:
+      "https://opportunitymarketing.co.uk/wp-content/uploads/2019/08/Black_Friday-1.jpg",
+    Onboarded_on: "2015-07-17",
+    active: false,
+  },
+];

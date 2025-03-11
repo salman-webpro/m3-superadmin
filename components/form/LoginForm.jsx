@@ -23,26 +23,27 @@ const LoginForm = () => {
   const { toast } = useToast();
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    setIsLoading(true);
-    const formData = new FormData(event.currentTarget);
-    const response = await signIn("credentials", {
-      username: formData.get("username"),
-      password: formData.get("password"),
-      redirect: false,
-    });
-    if (response.status === 200) {
-      router.push("/");
-    } else {
-      toast({
-        variant: "destructive",
+    router.push("dashboard");
+    // event.preventDefault();
+    // setIsLoading(true);
+    // const formData = new FormData(event.currentTarget);
+    // const response = await signIn("credentials", {
+    //   username: formData.get("username"),
+    //   password: formData.get("password"),
+    //   redirect: false,
+    // });
+    // if (response.status === 200) {
+    //   router.push("/");
+    // } else {
+    //   toast({
+    //     variant: "destructive",
 
-        title: "Login Error",
-        description: "Your credentials is incorrect",
-        action: <ToastAction altText="Try again">Try again</ToastAction>,
-      });
-    }
-    setIsLoading(false);
+    //     title: "Login Error",
+    //     description: "Your credentials is incorrect",
+    //     action: <ToastAction altText="Try again">Try again</ToastAction>,
+    //   });
+    // }
+    // setIsLoading(false);
   };
 
   return (

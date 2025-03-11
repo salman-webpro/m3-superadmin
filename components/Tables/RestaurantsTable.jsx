@@ -28,7 +28,7 @@ import fetchInterceptor from "@/interceptor";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import { MdOutlineErrorOutline } from "react-icons/md";
 import { useCookies } from "next-client-cookies";
-
+import RestaurrantData from "../Json/RestaurentData";
 export default function RestaurantsTable({ insights, header }) {
   const [data, setData] = useState([]);
   const [sort, setSort] = useState("asc");
@@ -37,8 +37,7 @@ export default function RestaurantsTable({ insights, header }) {
   const itemsPerPage = 50;
   const [totalData, setTotalData] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
-  console.log(totalPages);
-
+  console.log(RestaurrantData);
   const cookies = useCookies();
   useEffect(() => {
     const myFunc = async () => {
@@ -49,21 +48,14 @@ export default function RestaurantsTable({ insights, header }) {
     };
     myFunc();
   }, [searchText, currentPage]);
-  const MRSData = data?.slice(0, 10);
+  const MRSData = RestaurrantData?.slice(0, 10);
   console.log(data, "RestaurantsTable");
   const handleSortingByUserName = () => {
     setSort(sort === "asc" ? "desc" : "asc");
     const sortedData = sortRestaurantName(data, sort);
     setData(sortedData);
   };
-  const downloadFromUrl = (url) => {
-    const link = document.createElement("a");
-    link.href = url;
-    link.setAttribute("download", "restaurants.xlsx");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
   const handleDownlaod = async () => {
     toast({
       description: "Downloading...",
@@ -105,7 +97,6 @@ export default function RestaurantsTable({ insights, header }) {
       });
     }
   };
-  console.log("🚀 ~ RestaurantsTable ~ Data:", data); // for insights
   return (
     <>
       {!insights && (
@@ -184,7 +175,7 @@ export default function RestaurantsTable({ insights, header }) {
 
           {!insights ? (
             <TableBody className="text-16">
-              {data?.map((data) => (
+              {RestaurrantData?.map((data) => (
                 <TableRow
                   key={data?.id}
                   className="text-secondary-600 font-normal"

@@ -1,6 +1,6 @@
 import React from "react";
 import ActivityTable from "@/components/Tables/ActivityTable";
-
+import ActivityData from "@/components/Json/Activity_log";
 const headerActivity = [
   {
     accessorKey: "time",

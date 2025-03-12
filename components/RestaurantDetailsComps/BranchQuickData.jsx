@@ -1,10 +1,10 @@
 import React from "react";
 import { getResDetails } from "@/utils/getData";
 
-export default async function BranchQuickData({ data, getSlug }) {
-  const resData = await getResDetails(getSlug);
+export default async function BranchQuickData({ data }) {
+  // const resData = await getResDetails(getSlug);
   const restaurentQuictData = data?.restaurant_quickData;
-  console.log(restaurentQuictData, "BranchData====");
+
   return (
     <div className={" border rounded-[16px]"}>
       <div className={"grid grid-cols-12 items-center justify-center"}>

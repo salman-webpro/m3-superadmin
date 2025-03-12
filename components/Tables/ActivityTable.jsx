@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import AcceptDialogBox from "@/components/AcceptDialogBox";
 import DenyDialogBox from "@/components/DenyDialogBox";
 import SearchBar from "../shared/SearchBar";
-import { getActivityLog } from "@/utils/getData";
+// import { getActivityLog } from "@/utils/getData";
 import { sortUserName, sortCreatedAt } from "@/utils/sorting";
 import ActivityData from "@/components/Json/Activity_log";
 
@@ -56,15 +56,15 @@ export default function ActivityTable({ header, activity }) {
   const [totalData, setTotalData] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
 
-  useEffect(() => {
-    const myFunc = async () => {
-      const ActivityData = await getActivityLog(searchText, currentPage);
-      setData(ActivityData?.data);
-      setTotalData(ActivityData?.count);
-      setTotalPages(ActivityData?.total_pages);
-    };
-    myFunc();
-  }, [searchText, currentPage]);
+  // useEffect(() => {
+  //   const myFunc = async () => {
+  //     const ActivityData = await getActivityLog(searchText, currentPage);
+  //     setData(ActivityData?.data);
+  //     setTotalData(ActivityData?.count);
+  //     setTotalPages(ActivityData?.total_pages);
+  //   };
+  //   myFunc();
+  // }, [searchText, currentPage]);
 
   const handleSortingByCreatedAt = () => {
     setSort(sort === "asc" ? "desc" : "asc");

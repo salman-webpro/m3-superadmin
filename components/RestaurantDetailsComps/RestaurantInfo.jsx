@@ -12,8 +12,8 @@ import EmailView from "../shared/EmailView";
 import { getResDetails } from "@/utils/getData";
 import PlaceHolderImage from "../../public/user-icon.png";
 
-export default async function RestaurantInfo({ data, getSlug }) {
-  const resData = await getResDetails(getSlug);
+export default async function RestaurantInfo({ data }) {
+  // const resData = await getResDetails(getSlug);
   const restaurentInformation = data?.restaurant_info;
   return (
     <>

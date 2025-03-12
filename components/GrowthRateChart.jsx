@@ -1,8 +1,8 @@
 import ApexChart from "@/components/ApexChart";
-import { getChartData } from "@/utils/getData";
+// import { getChartData } from "@/utils/getData";
 
 export default async function GrowthRateChart() {
-  const chartData = await getChartData();
+  // const chartData = await getChartData();
   const quickData = {
     total_restaurants: 100,
     total_visitors: 5000,

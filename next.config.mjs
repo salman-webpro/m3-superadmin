@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  // output: "export",
   images: {
     remotePatterns: [
       {
@@ -37,13 +37,14 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    serverActions: {
-      allowedOrigins: [
-        "http://115.127.97.250:8010/",
-        "http://115.127.97.250:8080/",
-      ],
-    },
-  },
+  // experimental: {
+  //   serverActions: {
+  //     allowedOrigins: [
+  //       "http://115.127.97.250:8010/",
+  //       "http://115.127.97.250:8080/",
+  //     ],
+  //   },
+  // },
 };
+// export default nextConfig;
 export default nextConfig;

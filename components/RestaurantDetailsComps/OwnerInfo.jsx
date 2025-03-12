@@ -15,11 +15,10 @@ import EmailView from "../shared/EmailView";
 import { getResDetails } from "@/utils/getData";
 import PlaceHolderImage from "../../public/user-icon.png";
 
-export default async function OwnerInfo({ data, getSlug }) {
-  const resData = await getResDetails(getSlug);
+export default async function OwnerInfo({ data }) {
+  // const resData = await getResDetails(getSlug);
   const ownerInformation = data?.owner_info;
 
-  console.log("resData", resData.data);
   return (
     <div className={"xl:col-span-6 lg:col-span-12 p-2 border rounded-[16px]"}>
       <div className={"grid grid-cols-12"}>

@@ -17,7 +17,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import SwitchDemo from "@/components/Switch/Switch";
 import Link from "next/link";
 import dayjs from "dayjs";
-import { getResData, getResFile } from "@/utils/getData";
+// import { getResData, getResFile } from "@/utils/getData";
 import { useEffect, useState } from "react";
 import SearchBar from "@/components/shared/SearchBar";
 import { sortRestaurantName } from "@/utils/sorting";
@@ -39,15 +39,15 @@ export default function RestaurantsTable({ insights, header }) {
   const [totalPages, setTotalPages] = useState(0);
   console.log(RestaurrantData);
   const cookies = useCookies();
-  useEffect(() => {
-    const myFunc = async () => {
-      const resData = await getResData(searchText, currentPage);
-      setData(resData?.data);
-      setTotalData(resData?.count);
-      setTotalPages(resData?.total_pages);
-    };
-    myFunc();
-  }, [searchText, currentPage]);
+  // useEffect(() => {
+  //   const myFunc = async () => {
+  //     const resData = await getResData(searchText, currentPage);
+  //     setData(resData?.data);
+  //     setTotalData(resData?.count);
+  //     setTotalPages(resData?.total_pages);
+  //   };
+  //   myFunc();
+  // }, [searchText, currentPage]);
   const MRSData = RestaurrantData?.slice(0, 10);
   console.log(data, "RestaurantsTable");
   const handleSortingByUserName = () => {

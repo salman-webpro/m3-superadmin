@@ -9,10 +9,8 @@ import Branches from "@/components/RestaurantDetailsComps/Branches";
 import RestaurantDetailsData from "@/components/Json/RestaurantDetails.js";
 import { getResDetails } from "@/utils/getData";
 
-export default async function RestaurantDetailsPage({ params: slug }) {
-  const getSlug = slug?.slug;
-  console.log("RestaurantDetailsDataaa", RestaurantDetailsData);
-  console.log("getSlug", getSlug);
+export default async function RestaurantDetailsPage() {
+  // const getSlug = slug?.slug;
 
   // const resData = await getResDetails(getSlug);
 
@@ -37,17 +35,17 @@ export default async function RestaurantDetailsPage({ params: slug }) {
         </div>
         <div className="grid grid-cols-2 grid-rows-1 gap-4 pt-5">
           <div>
-            <RestaurantInfo data={RestaurantDetailsData[0]} getSlug={getSlug} />
+            <RestaurantInfo data={RestaurantDetailsData[0]} />
           </div>
           <div>
-            <OwnerInfo data={RestaurantDetailsData[0]} getSlug={getSlug} />
+            <OwnerInfo data={RestaurantDetailsData[0]} />
           </div>
         </div>
         <div className={"grid grid-cols-1 grid-rows-1 py-5"}>
-          <BranchQuickData data={RestaurantDetailsData[0]} getSlug={getSlug} />
+          <BranchQuickData data={RestaurantDetailsData[0]} />
         </div>
         <div className={"grid grid-cols-1 grid-rows-1"}>
-          <Branches data={RestaurantDetailsData[0]} getSlug={getSlug} />
+          <Branches data={RestaurantDetailsData[0]} />
         </div>
       </div>
     </div>

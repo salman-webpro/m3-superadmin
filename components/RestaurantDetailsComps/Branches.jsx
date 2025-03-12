@@ -20,7 +20,7 @@ import {
 import Image from "next/image";
 import { getResDetails } from "@/utils/getData";
 
-export default function Branches({ main_branch = true, data, getSlug }) {
+export default function Branches({ main_branch = true, data }) {
   const [restaurenBranchData, setRestaurenBranchData] = React.useState("");
   // const resData = await getResDetails(getSlug);
   const branchData = data?.branches;

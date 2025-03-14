@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-// import { getChartData } from "@/utils/getData";
+import { getChartData } from "@/utils/getData";
 
 export default function ApexChart(effect, deps) {
   const [series, setSeries] = useState([]);
@@ -12,19 +12,19 @@ export default function ApexChart(effect, deps) {
   const [selectedYear_1, setSelectedYear_1] = useState(0);
   const [selectedYear_2, setSelectedYear_2] = useState(0);
 
-  // useEffect(() => {
-  //   const callData = async () => {
-  //     const data = await getChartData(selectedYear_1, selectedYear_2);
-  //     setSeries(data?.data?.chart?.years_data);
-  //     setFirstYear(data?.data?.years[data?.data?.years?.length - 2]);
-  //     setSecondYear(data?.data?.years[data?.data?.years?.length - 1]);
-  //     setYears(data?.data?.years);
-  //     if (data?.data?.chart?.months.length > 0) {
-  //       setMonth(data?.data?.chart?.months);
-  //     }
-  //   };
-  //   callData();
-  // }, [selectedYear_1, selectedYear_2]);
+  useEffect(() => {
+    const callData = async () => {
+      const data = await getChartData(selectedYear_1, selectedYear_2);
+      setSeries(data?.data?.chart?.years_data);
+      setFirstYear(data?.data?.years[data?.data?.years?.length - 2]);
+      setSecondYear(data?.data?.years[data?.data?.years?.length - 1]);
+      setYears(data?.data?.years);
+      if (data?.data?.chart?.months.length > 0) {
+        setMonth(data?.data?.chart?.months);
+      }
+    };
+    callData();
+  }, [selectedYear_1, selectedYear_2]);
 
   const handleFirstYearChange = (e) => {
     setSelectedYear_1(e.target.value);
